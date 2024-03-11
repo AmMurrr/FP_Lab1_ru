@@ -1,10 +1,11 @@
 // Print a table of a given function f, computed by taylor series
 
 // function to compute
-let f = sin
+let f x = ((1.0+x**2.0)/2.0)*atan x - (x/2.0)
 
-let a = 0.0
-let b = 1.0
+
+let a = 0.1
+let b = 0.6
 let n = 10
 
 // Define a function to compute f using naive taylor series method
@@ -22,4 +23,3 @@ let main =
 // for each of the methods
 
 main
-
